@@ -1,0 +1,215 @@
+{
+    "comments": [
+      {
+        "avatar": "avatar1.jpg",
+        "name": "John Doe",
+        "date": "2023-06-27",
+        "content": "I'm facing a JavaScript problem where my function isn't returning the expected output. Can anyone help me debug this?",
+        "id": "comment1"
+      },
+      {
+        "avatar": "avatar2.jpg",
+        "name": "Jane Smith",
+        "date": "2023-06-26",
+        "content": "Sure, John! Please share your code, and I'll do my best to assist you.",
+        "id": "comment2"
+      },
+      {
+        "avatar": "avatar3.jpg",
+        "name": "David Johnson",
+        "date": "2023-06-25",
+        "content": "Hi John, I'd be happy to help. Could you provide more details about the specific issue you're encountering?",
+        "id": "comment3"
+      },
+      {
+        "avatar": "avatar4.jpg",
+        "name": "Emily Wilson",
+        "date": "2023-06-25",
+        "content": "I had a similar problem before. Can you share the error message you're getting?",
+        "id": "comment4"
+      },
+      {
+        "avatar": "avatar5.jpg",
+        "name": "Michael Thompson",
+        "date": "2023-06-24",
+        "content": "It would be helpful if you could show us the code you've written so far.",
+        "id": "comment5"
+      },
+      {
+        "avatar": "avatar6.jpg",
+        "name": "Sarah Adams",
+        "date": "2023-06-23",
+        "content": "Have you tried using the browser's developer tools to debug your code?",
+        "id": "comment6"
+      },
+      {
+        "avatar": "avatar7.jpg",
+        "name": "Robert Garcia",
+        "date": "2023-06-23",
+        "content": "I'm experienced with JavaScript. Feel free to ask me any questions.",
+        "id": "comment7"
+      },
+      {
+        "avatar": "avatar8.jpg",
+        "name": "Olivia Martinez",
+        "date": "2023-06-22",
+        "content": "I think I can help. Can you describe what the function is supposed to do?",
+        "id": "comment8"
+      },
+      {
+        "avatar": "avatar9.jpg",
+        "name": "William Lee",
+        "date": "2023-06-22",
+        "content": "Check for any syntax errors in your code. Sometimes a small mistake can cause unexpected results.",
+        "id": "comment9"
+      },
+      {
+        "avatar": "avatar10.jpg",
+        "name": "Ava Wilson",
+        "date": "2023-06-21",
+        "content": "Did you try searching for similar issues on Stack Overflow? You might find a solution there.",
+        "id": "comment10"
+      },
+      {
+        "avatar": "avatar11.jpg",
+        "name": "Daniel Davis",
+        "date": "2023-06-20",
+        "content": "Consider using console.log() to output the values of variables at different stages of your code.",
+        "id": "comment11"
+      },
+      {
+        "avatar": "avatar12.jpg",
+        "name": "Sophia Clark",
+        "date": "2023-06-20",
+        "content": "Are you using any specific JavaScript framework or library?",
+        "id": "comment12"
+      },
+      {
+        "avatar": "avatar13.jpg",
+        "name": "Liam Adams",
+        "date": "2023-06-20",
+        "content": "I had a similar issue recently. Have you checked if your function is being called at the right time?",
+        "id": "comment13"
+      },
+      {
+        "avatar": "avatar14.jpg",
+        "name": "Victoria Roberts",
+        "date": "2023-06-19",
+        "content": "Have you tried stepping through your code line by line to see where the issue arises?",
+        "id": "comment14"
+      },
+      {
+        "avatar": "avatar15.jpg",
+        "name": "Henry Lewis",
+        "date": "2023-06-19",
+        "content": "I recommend using a linter to catch any common JavaScript errors.",
+        "id": "comment15"
+      },
+      {
+        "avatar": "avatar16.jpg",
+        "name": "Grace Turner",
+        "date": "2023-06-18",
+        "content": "Sometimes restructuring your code or breaking it into smaller functions can help with debugging.",
+        "id": "comment16"
+      },
+      {
+        "avatar": "avatar17.jpg",
+        "name": "Josephine Clark",
+        "date": "2023-06-18",
+        "content": "Have you checked if your function is properly receiving the expected arguments?",
+        "id": "comment17"
+      },
+      {
+        "avatar": "avatar18.jpg",
+        "name": "Benjamin Adams",
+        "date": "2023-06-17",
+        "content": "Consider using a try-catch block to handle any potential exceptions in your code.",
+        "id": "comment18"
+      },
+      {
+        "avatar": "avatar19.jpg",
+        "name": "Sophie Turner",
+        "date": "2023-06-17",
+        "content": "Are there any specific error messages or console logs that you can share with us?",
+        "id": "comment19"
+      },
+      {
+        "avatar": "avatar20.jpg",
+        "name": "Jacob Wright",
+        "date": "2023-06-16",
+        "content": "I recommend breaking down the problem into smaller parts and testing each component separately.",
+        "id": "comment20"
+      },
+      {
+        "avatar": "avatar21.jpg",
+        "name": "Isabella Martin",
+        "date": "2023-06-16",
+        "content": "Have you considered using a debugger to step through your code and identify the issue?",
+        "id": "comment21"
+      },
+      {
+        "avatar": "avatar22.jpg",
+        "name": "Ethan Taylor",
+        "date": "2023-06-15",
+        "content": "Is there any specific behavior that your function is exhibiting that you find unexpected?",
+        "id": "comment22"
+      },
+      {
+        "avatar": "avatar23.jpg",
+        "name": "Charlotte Anderson",
+        "date": "2023-06-15",
+        "content": "Have you tried running your code in a different browser or environment to see if the issue persists?",
+        "id": "comment23"
+      },
+      {
+        "avatar": "avatar24.jpg",
+        "name": "James Hernandez",
+        "date": "2023-06-14",
+        "content": "Consider using the 'debugger' statement in your code to pause execution and inspect variables.",
+        "id": "comment24"
+      },
+      {
+        "avatar": "avatar25.jpg",
+        "name": "Mia Roberts",
+        "date": "2023-06-14",
+        "content": "Are there any external dependencies that your function relies on? Ensure they are properly configured.",
+        "id": "comment25"
+      },
+      {
+        "avatar": "avatar26.jpg",
+        "name": "Christopher Young",
+        "date": "2023-06-13",
+        "content": "Have you considered using unit tests to verify the correctness of your function?",
+        "id": "comment26"
+      },
+      {
+        "avatar": "avatar27.jpg",
+        "name": "Amelia Johnson",
+        "date": "2023-06-13",
+        "content": "Make sure that your JavaScript file is properly included in your HTML document.",
+        "id": "comment27"
+      },
+      {
+        "avatar": "avatar28.jpg",
+        "name": "Andrew Wilson",
+        "date": "2023-06-12",
+        "content": "Are there any specific inputs for which your function fails? Identifying edge cases can be helpful.",
+        "id": "comment28"
+      },
+      {
+        "avatar": "avatar29.jpg",
+        "name": "Elizabeth Davis",
+        "date": "2023-06-12",
+        "content": "Have you tried Googling the error message or the symptoms you're experiencing? You might find relevant discussions.",
+        "id": "comment29"
+      },
+      {
+        "avatar": "avatar30.jpg",
+        "name": "Alexander Taylor",
+        "date": "2023-06-11",
+        "content": "Consider reaching out to online developer communities or forums for assistance with your JavaScript problem.",
+        "id": "comment30"
+      }
+    ]
+  }
+  
