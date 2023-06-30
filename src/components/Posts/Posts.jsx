@@ -32,6 +32,7 @@ const Posts = () => {
     id: small_id,
   };
   const addReply = (comment ,post) => {
+    localStorage.setItem("currentPost", JSON.stringify(post));
     const currentPost = JSON.parse(localStorage.getItem("currentPost"));
     const updatedComments = [...currentPost.comments, comment];
     const updatedPost = { ...currentPost, comments: updatedComments };
@@ -43,7 +44,7 @@ const Posts = () => {
         setCurrentPost({ ...currentPost, comments: updatedComments });
       })
       .catch((error) => console.error(error));
-      localStorage.setItem("currentPost", JSON.stringify(post));
+      
   };
 
   const newObj = {
