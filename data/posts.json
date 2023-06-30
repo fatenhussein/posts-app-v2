@@ -60,28 +60,6 @@
           "id": "dab3ca5c"
         },
         {
-          "avatar": "https://avatars.githubusercontent.com/u/78740807",
-          "name": "hala",
-          "date": {
-            "day": "2023-06-30",
-            "hours": 17,
-            "ments": 28
-          },
-          "content": "hello",
-          "id": "9989bddc"
-        },
-        {
-          "avatar": "https://avatars.githubusercontent.com/u/78191039",
-          "name": "hala",
-          "date": {
-            "day": "2023-06-30",
-            "hours": 18,
-            "ments": 28
-          },
-          "content": "hello",
-          "id": "a25c5a4e"
-        },
-        {
           "avatar": "https://avatars.githubusercontent.com/u/58016181",
           "name": "lara",
           "date": {
@@ -122,6 +100,17 @@
           },
           "content": "Consider using the 'debugger' statement in your code to pause execution and inspect variables.",
           "id": "d6a2c8e5"
+        },
+        {
+          "avatar": "https://avatars.githubusercontent.com/u/45641052",
+          "name": "DataNinja",
+          "date": {
+            "day": "2023-06-30",
+            "hours": 18,
+            "ments": 32
+          },
+          "content": "Consider reaching out to online developer communities or forums for assistance with your JavaScript problem.",
+          "id": "e332bacb"
         }
       ],
       "userName": "JaneSmith",
