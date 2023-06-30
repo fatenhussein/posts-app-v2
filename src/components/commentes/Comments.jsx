@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "semantic-ui-css/semantic.min.css";
 import axios from "axios";
-import "./comments.css"
+import "./comments.css";
 const Comments = ({ comments, post }) => {
   const [clicked, setclicked] = useState(false);
   const [editetComment, setEditetComment] = useState("");
@@ -19,7 +19,7 @@ const Comments = ({ comments, post }) => {
       .catch((error) => console.error(error));
     localStorage.setItem("currentPost", JSON.stringify(updatedPost));
   };
-  const editComment = (comment , id) => {
+  const editComment = (comment, id) => {
     let arrComments = comments;
     console.log(arrComments);
 
@@ -31,7 +31,6 @@ const Comments = ({ comments, post }) => {
       );
 
       setActiveCommentId((prevId) => (prevId === id ? null : id));
-      
     }
 
     console.log(arrComments);
@@ -57,37 +56,49 @@ const Comments = ({ comments, post }) => {
             </a>
 
             <div className="content">
-              <a className="author" id="wihte">{comment.name}</a>
+              <a className="author" id="wihte">
+                {comment.name}
+              </a>
               <div className="metadata">
                 <span className="date">{`${comment.date.day} At ${comment.date.hours}:${comment.date.ments}`}</span>
               </div>
 
-              <div className="text" id="wihte">{comment.content}</div>
+              <div className="text" id="wihte">
+                {comment.content}
+              </div>
 
               <div className="actions">
-                <a className="reply" id="gray">Reply</a>
-                <a className="reply" id="gray" onClick={() => deleteComment(comment.id)}>
+                <a className="reply" id="gray">
+                  Reply
+                </a>
+                <a
+                  className="reply"
+                  id="gray"
+                  onClick={() => deleteComment(comment.id)}
+                >
                   Delete
                 </a>
-                <a className="reply" id="gray" onClick={() => editComment(comment ,comment.id)}>
+                <a
+                  className="reply"
+                  id="gray"
+                  onClick={() => editComment(comment, comment.id)}
+                >
                   Edit
                 </a>
               </div>
             </div>
-            {activeCommentId ===comment.id&& (
-               <div class="ui input">
-          <input
-            type="text"
-            placeholder="Edit..."
-            onChange={(e) => setEditetComment(e.target.value)}
-          />
-        </div>
-      )}
+            {activeCommentId === comment.id && (
+              <div class="ui input">
+                <input
+                  type="text"
+                  placeholder="Edit..."
+                  onChange={(e) => setEditetComment(e.target.value)}
+                />
+              </div>
+            )}
           </div>
         );
       })}
-
-     
     </div>
   );
 };
