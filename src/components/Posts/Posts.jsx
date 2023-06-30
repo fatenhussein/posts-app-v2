@@ -94,19 +94,19 @@ const Posts = () => {
   <h2 class="text_shadows">"Talk is cheap. Show me the code."</h2>
 </div>
       <form className="ui reply form">
-        <div className="field">
-          <label id="white">User Name </label>
-          <input
-            type="text"
-            name="first-name"
-            placeholder="User Name"
-            onChange={(e) => setPostAuther(e.target.value)}
-          />
-        </div>
+      <label id="white">User Name </label><br/>
+ <div class="ui input"   id="nameInput">
 
+                        <input
+                          type="text"
+                          placeholder="name..."
+                        
+                          onChange={(e) => setPostAuther(e.target.value)}
+                        />
+                      </div>
         <div className="field">
           <label id="theprosLabel"> Ask the pros </label>
-          <textarea onChange={(e) => setPostDesc(e.target.value)}></textarea>
+          <textarea  placeholder="Add post..." onChange={(e) => setPostDesc(e.target.value)}></textarea>
         </div>
         <div
           className="ui blue labeled submit icon button"
