@@ -1,148 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&family=Poppins:wght@700&family=Roboto:wght@100;400&family=Urbanist:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&family=Poppins:wght@700&family=Roboto:wght@100;400&family=Urbanist:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 :root {
-    --color-primary: #f6aca2;
-    --color-secondary: #f49b90;
-    --color-tertiary: #f28b7d;
-    --color-quaternary: #f07a6a;
-    --color-quinary: #ee6352;
+  --color-primary: #f6aca2;
+  --color-secondary: #f49b90;
+  --color-tertiary: #f28b7d;
+  --color-quaternary: #f07a6a;
+  --color-quinary: #ee6352;
 }
 
-.wihte{
-    color: white;
+.wihte {
+  color: white;
 }
-.date{
-    color: gray;
-}
-
-#userNameLabel{
-    color: white;
-   
+.date {
+  color: gray;
 }
 
-#nameInput{
-    margin-bottom: 1rem;
- margin-top: .5rem;
-}
-#theprosLabel{
-    color: rgba(255, 255, 255, 0.895);
-    font-size: 1.3rem;
-    margin: .6rem 0rem;
-    font-family: 'Outfit';
-    text-transform: capitalize;
-}
-#white{
-    color: white;
-    font-family: 'Outfit';
-    font-size: 1.3rem;
-    margin: .6rem 0rem;
+#userNameLabel {
+  color: white;
 }
 
-.padding{
-
-    padding: 8rem;
+#nameInput {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
-#btn{
-
-
+#theprosLabel {
+  color: rgba(255, 255, 255, 0.895);
+  font-size: 1.3rem;
+  margin: 0.6rem 0rem;
+  font-family: "Outfit";
+  text-transform: capitalize;
 }
+#white {
+  color: white;
+  font-family: "Outfit";
+  font-size: 1.3rem;
+  margin: 0.6rem 0rem;
+}
+
+.padding {
+  padding: 8rem;
+}
+#btn:hover {
+  background-color: #f28b7d;
+}
+
 /*anmation*/
 .content {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 3rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(1rem + 2.5vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+#commentTextArea {
+  height: 120px;
+  width: 400px;
+}
+.border {
+  padding-bottom: 1rem;
+  border-bottom: dotted 1px grey;
+}
+@keyframes shadows {
+  0% {
+    text-shadow: none;
   }
-  h2{
-    font-size: 1.5rem;
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
   }
-  .text_shadows {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
-      9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-    font-family: bungee, sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: calc(1rem + 2.5vw);
-    text-align: center;
-    margin: 0;
-    color: var(--color-primary);
-    /* color: transparent;
-    background-color: white;
-    background-clip: text; */
-    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
-    letter-spacing: 0.4rem;
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
   }
-  
-  @keyframes shadows {
-    0% {
-      text-shadow: none;
-    }
-    10% {
-      text-shadow: 3px 3px 0 var(--color-secondary);
-    }
-    20% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary);
-    }
-    30% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-    }
-    40% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
-        12px 12px 0 var(--color-quinary);
-    }
-    50% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
-        12px 12px 0 var(--color-quinary);
-    }
-    60% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
-        12px 12px 0 var(--color-quinary);
-    }
-    70% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-    }
-    80% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary);
-    }
-    90% {
-      text-shadow: 3px 3px 0 var(--color-secondary);
-    }
-    100% {
-      text-shadow: none;
-    }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
   }
-  
-  @keyframes move {
-    0% {
-      transform: translate(0px, 0px);
-    }
-    40% {
-      transform: translate(-12px, -12px);
-    }
-    50% {
-      transform: translate(-12px, -12px);
-    }
-    60% {
-      transform: translate(-12px, -12px);
-    }
-    100% {
-      transform: translate(0px, 0px);
-    }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
   }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
 
-
-  @media (max-width: 768px) {
-
-    .content{
-        margin-top: 3rem;
-    }
-    .padding{
-        padding: 4rem;
-    }
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
   }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 3rem;
+  }
+  .padding {
+    padding: 4rem;
+  }
+  #commentTextArea {
+    height: 100px;
+    width: 280px;
+  }
+}

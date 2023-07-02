@@ -8,17 +8,18 @@ import "./posts.css";
 const Posts = () => {
   const [posts, setPosts] = useState([]);
   const [activePostId, setActivePostId] = useState(null);
-
   const [postAuther, setPostAuther] = useState("");
   const [postDesc, setPostDesc] = useState("");
-
   const [reply, setReply] = useState("");
-
   const [currentPost, setCurrentPost] = useState("");
-
   const [name, setName] = useState("");
+
+  //generate uniqe id
   const unique_id = uuid();
   const small_id = unique_id.slice(0, 8);
+
+  ///  the new comment obj
+
   const newComment = {
     avatar: faker.image.avatar(),
     name: name,
@@ -31,7 +32,11 @@ const Posts = () => {
     content: reply,
     id: small_id,
   };
-  const addReply = (comment ,post) => {
+
+  // add reply function
+  const addReply = (comment, post) => {
+
+
     localStorage.setItem("currentPost", JSON.stringify(post));
     const currentPost = JSON.parse(localStorage.getItem("currentPost"));
     const updatedComments = [...currentPost.comments, comment];
@@ -42,11 +47,15 @@ const Posts = () => {
       .then((response) => {
         console.log(response.data);
         setCurrentPost({ ...currentPost, comments: updatedComments });
+        setName("");
+        setReply("");
       })
       .catch((error) => console.error(error));
+
       
   };
 
+  // add new post ibj
   const newObj = {
     content: postDesc,
     date: new Date().toJSON().slice(0, 10),
@@ -55,22 +64,33 @@ const Posts = () => {
     avatar: faker.image.avatar(),
   };
 
+  //togle to show the comments we dtermain the value  activepostid  if id===id its
+  // active we set it to null to deactivate it
   const handleToggle = (postId) => {
     setActivePostId((prevId) => (prevId === postId ? null : postId));
-
   };
 
+
+
+  //function for add the post
   const addPost = (obj) => {
+    setPostAuther("");
+    setPostDesc("");
     axios
       .post(apiUrl, obj)
       .then((response) => {
+        setPostAuther(" ");
+        setPostDesc(" ");
+
         setPosts([...posts, response.data]);
       })
       .catch((error) => {
         console.error("An error occurred:", error.response.data);
       });
-  
+   
   };
+
+  // fetch the api to get the posts and then set the posts state
   const apiUrl = "http://localhost:3500/posts";
   useEffect(() => {
     async function fetchData() {
@@ -95,11 +115,13 @@ const Posts = () => {
       <div class="content">
         <h2 class="text_shadows">"Talk is cheap. Show me the code."</h2>
       </div>
+      {/* form for add new post  and take the inpusts from the user */}
       <form className="ui reply form">
         <label id="white">User Name </label>
         <br />
         <div class="ui input" id="nameInput">
           <input
+            value={postAuther}
             type="text"
             placeholder="name..."
             onChange={(e) => setPostAuther(e.target.value)}
@@ -108,6 +130,7 @@ const Posts = () => {
         <div className="field">
           <label id="theprosLabel"> Ask the pros </label>
           <textarea
+           value={postDesc}
             placeholder="Add post..."
             onChange={(e) => setPostDesc(e.target.value)}
           ></textarea>
@@ -120,6 +143,7 @@ const Posts = () => {
         </div>
       </form>
       <div className="ui relaxed items">
+        {/* map over the posts*/}
         {posts.map((post) => {
           return (
             <>
@@ -141,23 +165,30 @@ const Posts = () => {
                     <button
                       className="ui right floated button"
                       id="btn"
-                      onClick={() => handleToggle(post.id, post)}
+                      onClick={() => handleToggle(post.id, post)
+                      
+                      }
                     >
                       comments
                     </button>
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="border">
+                {/* toggle to show the comments */}
                 {activePostId === post.id && (
                   <>
+                    {/*  comments  components with the props */}
                     <Comments
                       comments={post.comments}
                       postId={post.id}
                       post={post}
                     />
-
-                    <form className="ui reply form">
+                   
+                  </>
+                )}
+                 {/*form  to add the new comment */}
+                 <form className="ui reply form">
                       <label id="userNameLabel">User Name </label>
                       <br />
                       <div class="ui input" id="nameInput">
@@ -165,23 +196,24 @@ const Posts = () => {
                           type="text"
                           placeholder="name..."
                           onChange={(e) => setName(e.target.value)}
+                          value={name}
                         />
                       </div>
                       <div className="field" id="commentText">
                         <textarea
                           placeholder="Add comment..."
                           onChange={(e) => setReply(e.target.value)}
+                          id="commentTextArea"
+                          value={reply}
                         ></textarea>
                       </div>
                       <div
                         className="ui blue labeled submit icon button"
-                        onClick={() => addReply(newComment ,post)}
+                        onClick={() => addReply(newComment, post)}
                       >
                         <i className="icon edit"></i> Add Reply
                       </div>
                     </form>
-                  </>
-                )}
               </div>
             </>
           );

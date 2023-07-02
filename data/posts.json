@@ -60,15 +60,15 @@
           "id": "dab3ca5c"
         },
         {
-          "avatar": "https://avatars.githubusercontent.com/u/58016181",
-          "name": "lara",
+          "avatar": "https://avatars.githubusercontent.com/u/92874870",
+          "name": "lolo",
           "date": {
-            "day": "2023-06-30",
-            "hours": 18,
-            "ments": 28
+            "day": "2023-07-02",
+            "hours": 8,
+            "ments": 59
           },
-          "content": "hi everyone",
-          "id": "cee45446"
+          "content": "do you want help?",
+          "id": "32d423bd"
         }
       ],
       "userName": "JohnDoe",
@@ -120,7 +120,19 @@
     {
       "content": "What are some common pitfalls to watch out for when working with asynchronous JavaScript?",
       "date": "2023-06-29",
-      "comments": [],
+      "comments": [
+        {
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/12.jpg",
+          "name": "faten",
+          "date": {
+            "day": "2023-07-02",
+            "hours": 12,
+            "ments": 20
+          },
+          "content": "etghy",
+          "id": "5b8d6864"
+        }
+      ],
       "userName": "JSDev123",
       "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/851.jpg",
       "id": 37
@@ -147,6 +159,17 @@
           },
           "content": "hello there !",
           "id": "65395ee8"
+        },
+        {
+          "avatar": "https://avatars.githubusercontent.com/u/44692395",
+          "name": "raw34",
+          "date": {
+            "day": "2023-07-02",
+            "hours": 9,
+            "ments": 50
+          },
+          "content": "s3453s45ctyrv",
+          "id": "2b1e8316"
         }
       ],
       "userName": "TechGuru",
@@ -212,7 +235,19 @@
     {
       "content": "I'm facing challenges with debugging JavaScript code. What are some useful techniques and tools to debug effectively?",
       "date": "2023-06-29",
-      "comments": [],
+      "comments": [
+        {
+          "avatar": "https://avatars.githubusercontent.com/u/71291819",
+          "name": "hgxfhj",
+          "date": {
+            "day": "2023-07-02",
+            "hours": 11,
+            "ments": 19
+          },
+          "content": "fcgcf",
+          "id": "81b371ba"
+        }
+      ],
       "userName": " DebugNinja",
       "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/970.jpg",
       "id": 47
@@ -268,7 +303,19 @@
     {
       "content": "What are some good practices for testing JavaScript code? Any recommended testing frameworks or tools?",
       "date": "2023-06-29",
-      "comments": [],
+      "comments": [
+        {
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/705.jpg",
+          "name": "...",
+          "date": {
+            "day": "2023-07-02",
+            "hours": 10,
+            "ments": 5
+          },
+          "content": "45454",
+          "id": "a9d8aadb"
+        }
+      ],
       "userName": "TestingEnthusiast",
       "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/208.jpg",
       "id": 54
