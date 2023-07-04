@@ -58,17 +58,6 @@
           },
           "content": "Is there any specific behavior that your function is exhibiting that you find unexpected?",
           "id": "dab3ca5c"
-        },
-        {
-          "avatar": "https://avatars.githubusercontent.com/u/92874870",
-          "name": "lolo",
-          "date": {
-            "day": "2023-07-02",
-            "hours": 8,
-            "ments": 59
-          },
-          "content": "do you want help?",
-          "id": "32d423bd"
         }
       ],
       "userName": "JohnDoe",
@@ -120,19 +109,7 @@
     {
       "content": "What are some common pitfalls to watch out for when working with asynchronous JavaScript?",
       "date": "2023-06-29",
-      "comments": [
-        {
-          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/12.jpg",
-          "name": "faten",
-          "date": {
-            "day": "2023-07-02",
-            "hours": 12,
-            "ments": 20
-          },
-          "content": "etghy",
-          "id": "5b8d6864"
-        }
-      ],
+      "comments": [],
       "userName": "JSDev123",
       "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/851.jpg",
       "id": 37
@@ -157,19 +134,8 @@
             "hours": 16,
             "ments": 20
           },
-          "content": "hello there !",
+          "content": "hiiii",
           "id": "65395ee8"
-        },
-        {
-          "avatar": "https://avatars.githubusercontent.com/u/44692395",
-          "name": "raw34",
-          "date": {
-            "day": "2023-07-02",
-            "hours": 9,
-            "ments": 50
-          },
-          "content": "s3453s45ctyrv",
-          "id": "2b1e8316"
         }
       ],
       "userName": "TechGuru",
@@ -255,7 +221,19 @@
     {
       "content": "What are the differences between 'let', 'const', and 'var' in JavaScript? When should each be used?",
       "date": "2023-06-29",
-      "comments": [],
+      "comments": [
+        {
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/994.jpg",
+          "name": "ljln",
+          "date": {
+            "day": "2023-07-02",
+            "hours": 14,
+            "ments": 47
+          },
+          "content": "reaer",
+          "id": "331c2217"
+        }
+      ],
       "userName": "ES6Fanatic",
       "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1007.jpg",
       "id": 48
@@ -353,11 +331,166 @@
           },
           "content": "Consider using console.log() to output the values of variables at different stages of your code.",
           "id": "784092a1"
+        },
+        {
+          "avatar": "https://avatars.githubusercontent.com/u/5207995",
+          "name": "ff",
+          "date": {
+            "day": "2023-07-03",
+            "hours": 21,
+            "ments": 42
+          },
+          "content": "hi sara",
+          "id": "7a871f42"
         }
       ],
       "userName": "sara",
       "avatar": "https://avatars.githubusercontent.com/u/57713962",
       "id": 56
+    },
+    {
+      "content": "heba",
+      "date": "2023-07-04",
+      "comments": [
+        {
+          "avatar": "https://avatars.githubusercontent.com/u/12744118",
+          "name": "user1@example.com",
+          "date": {
+            "day": "2023-07-04",
+            "hours": 8,
+            "ments": 31
+          },
+          "content": "hello",
+          "id": "6a382f7d"
+        },
+        {
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/754.jpg",
+          "name": "gg",
+          "date": {
+            "day": "2023-07-04",
+            "hours": 8,
+            "ments": 33
+          },
+          "content": "hhii",
+          "id": "c92be322"
+        }
+      ],
+      "userName": "user1@example.com",
+      "avatar": "https://avatars.githubusercontent.com/u/12744118",
+      "id": 57
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "email": "user1@example.com"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "password2",
+      "email": "user2@example.com"
+    },
+    {
+      "id": 3,
+      "username": "user3",
+      "password": "password3",
+      "email": "user3@example.com"
+    },
+    {
+      "id": 4,
+      "username": "user4",
+      "password": "password4",
+      "email": "user4@example.com"
+    },
+    {
+      "id": 5,
+      "username": "user5",
+      "password": "password5",
+      "email": "user5@example.com"
+    },
+    {
+      "id": 6,
+      "username": "user6",
+      "password": "password6",
+      "email": "user6@example.com"
+    },
+    {
+      "id": 7,
+      "username": "user7",
+      "password": "password7",
+      "email": "user7@example.com"
+    },
+    {
+      "id": 8,
+      "username": "user8",
+      "password": "password8",
+      "email": "user8@example.com"
+    },
+    {
+      "id": 9,
+      "username": "user9",
+      "password": "password9",
+      "email": "user9@example.com"
+    },
+    {
+      "id": 10,
+      "username": "user10",
+      "password": "password10",
+      "email": "user10@example.com"
+    },
+    {
+      "email": "user100@example.co",
+      "name": "ff",
+      "password": "password1",
+      "id": 11
+    },
+    {
+      "email": "faten.a.alhussein@gmail.com",
+      "name": "user1@example.com",
+      "password": "password1",
+      "id": 12
+    },
+    {
+      "email": "faten1.a.alhussein@gmail.com",
+      "name": "faten",
+      "password": "12345678",
+      "id": 13
+    },
+    {
+      "email": "faten23.a.alhussein@gmail.com",
+      "name": "sara",
+      "password": "12345678",
+      "id": 14
+    },
+    {
+      "email": "dwxerex@rdrrgrxy.com",
+      "name": "kkk",
+      "password": "12345678",
+      "id": 15
+    },
+    {
+      "email": "user200@example.com",
+      "username": "user1@example.com",
+      "password": "12345678",
+      "avatar": "https://avatars.githubusercontent.com/u/12744118",
+      "id": 16
+    },
+    {
+      "email": "faten45.a.alhussein@gmail.com",
+      "username": "gg",
+      "password": "12345678",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/754.jpg",
+      "id": 17
+    },
+    {
+      "email": "faten22.a.alhussein@gmail.com",
+      "username": "ff",
+      "password": "12345678",
+      "avatar": "https://avatars.githubusercontent.com/u/5207995",
+      "id": 18
     }
   ]
 }

@@ -14,6 +14,18 @@ const Posts = () => {
   const [currentPost, setCurrentPost] = useState("");
   const [name, setName] = useState("");
 
+  const [currentUser, setCurrentUser] = useState("");
+  let auth;
+  useEffect(() => {
+    setCurrentUser(JSON.parse(localStorage.getItem("currentUser")));
+    if (currentUser !== null) {
+      auth = currentUser.username;
+    }
+    else{
+      auth="";
+    }
+  }, []);
+
   //generate uniqe id
   const unique_id = uuid();
   const small_id = unique_id.slice(0, 8);
@@ -21,8 +33,8 @@ const Posts = () => {
   ///  the new comment obj
 
   const newComment = {
-    avatar: faker.image.avatar(),
-    name: name,
+    avatar: currentUser.avatar,
+    name: currentUser.username,
     date: {
       day: new Date().toJSON().slice(0, 10),
 
@@ -35,8 +47,6 @@ const Posts = () => {
 
   // add reply function
   const addReply = (comment, post) => {
-
-
     localStorage.setItem("currentPost", JSON.stringify(post));
     const currentPost = JSON.parse(localStorage.getItem("currentPost"));
     const updatedComments = [...currentPost.comments, comment];
@@ -51,8 +61,6 @@ const Posts = () => {
         setReply("");
       })
       .catch((error) => console.error(error));
-
-      
   };
 
   // add new post ibj
@@ -60,8 +68,8 @@ const Posts = () => {
     content: postDesc,
     date: new Date().toJSON().slice(0, 10),
     comments: [],
-    userName: postAuther,
-    avatar: faker.image.avatar(),
+    userName: currentUser.username,
+    avatar: currentUser.avatar,
   };
 
   //togle to show the comments we dtermain the value  activepostid  if id===id its
@@ -69,8 +77,6 @@ const Posts = () => {
   const handleToggle = (postId) => {
     setActivePostId((prevId) => (prevId === postId ? null : postId));
   };
-
-
 
   //function for add the post
   const addPost = (obj) => {
@@ -87,7 +93,6 @@ const Posts = () => {
       .catch((error) => {
         console.error("An error occurred:", error.response.data);
       });
-   
   };
 
   // fetch the api to get the posts and then set the posts state
@@ -117,20 +122,11 @@ const Posts = () => {
       </div>
       {/* form for add new post  and take the inpusts from the user */}
       <form className="ui reply form">
-        <label id="white">User Name </label>
-        <br />
-        <div class="ui input" id="nameInput">
-          <input
-            value={postAuther}
-            type="text"
-            placeholder="name..."
-            onChange={(e) => setPostAuther(e.target.value)}
-          />
-        </div>
+ 
         <div className="field">
           <label id="theprosLabel"> Ask the pros </label>
           <textarea
-           value={postDesc}
+            value={postDesc}
             placeholder="Add post..."
             onChange={(e) => setPostDesc(e.target.value)}
           ></textarea>
@@ -165,9 +161,7 @@ const Posts = () => {
                     <button
                       className="ui right floated button"
                       id="btn"
-                      onClick={() => handleToggle(post.id, post)
-                      
-                      }
+                      onClick={() => handleToggle(post.id, post)}
                     >
                       comments
                     </button>
@@ -184,36 +178,26 @@ const Posts = () => {
                       postId={post.id}
                       post={post}
                     />
-                   
                   </>
                 )}
-                 {/*form  to add the new comment */}
-                 <form className="ui reply form">
-                      <label id="userNameLabel">User Name </label>
-                      <br />
-                      <div class="ui input" id="nameInput">
-                        <input
-                          type="text"
-                          placeholder="name..."
-                          onChange={(e) => setName(e.target.value)}
-                          value={name}
-                        />
-                      </div>
-                      <div className="field" id="commentText">
-                        <textarea
-                          placeholder="Add comment..."
-                          onChange={(e) => setReply(e.target.value)}
-                          id="commentTextArea"
-                          value={reply}
-                        ></textarea>
-                      </div>
-                      <div
-                        className="ui blue labeled submit icon button"
-                        onClick={() => addReply(newComment, post)}
-                      >
-                        <i className="icon edit"></i> Add Reply
-                      </div>
-                    </form>
+                {/*form  to add the new comment */}
+                <form className="ui reply form">
+                
+                  <br />
+                  <div className="field" id="commentText">
+                    <textarea
+                      placeholder="Add comment..."
+                      onChange={(e) => setReply(e.target.value)}
+                      id="commentTextArea"
+                    ></textarea>
+                  </div>
+                  <div
+                    className="ui blue labeled submit icon button"
+                    onClick={() => addReply(newComment, post)}
+                  >
+                    <i className="icon edit"></i> Add Reply
+                  </div>
+                </form>
               </div>
             </>
           );
